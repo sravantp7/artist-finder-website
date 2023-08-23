@@ -1,0 +1,34 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #282a30;
+  --bg-color: #dadeef;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+
+.bg_image {
+  position: absolute;
+  z-index: -1;
+}
+
+/* Header */
+
+.logo {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 25px;
+}
