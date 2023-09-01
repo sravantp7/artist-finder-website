@@ -154,13 +154,17 @@ main {
 
 .form {
   width: 383px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .form input,
 .form button {
   height: 61px;
   width: 100%; /* Takes the width of its parent element*/
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 .form button {
@@ -177,4 +181,43 @@ main {
 
 .form button:hover {
   opacity: 0.8;
+}
+
+.form i {
+  position: absolute;
+  font-size: 17px;
+  color: #adb4c2;
+}
+
+/* selecting first i element inside form */
+.form i:nth-of-type(1) {
+  top: 22px;
+  left: 10px;
+}
+
+.form i:nth-of-type(2) {
+  top: 98px;
+  left: 10px;
+}
+
+/* CREDENTIALS */
+
+.credentials {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+  border-bottom: 1px solid #f2f3f8;
+}
+
+.credentials p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ccd0d9;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.credentials img {
+  width: 100px;
 }
