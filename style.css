@@ -110,7 +110,7 @@ header {
 main {
   max-width: 1150px;
   background-color: white;
-  height: 800px;
+  height: 1000px;
   margin: 0 auto;
   border-radius: 5px;
   margin-bottom: 35px;
@@ -220,4 +220,129 @@ main {
 
 .credentials img {
   width: 100px;
+}
+
+/* how section */
+
+.how-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-heading {
+  padding: 20px 0;
+  font-size: 32px;
+  color: #292c33;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.second-heading::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: violet;
+  display: block;
+  margin: 0 auto;
+}
+
+.steps {
+  width: 100%;
+  display: flex;
+  padding: 40px 0;
+  gap: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.step {
+  max-width: 250px;
+  text-align: center;
+}
+
+.step-icon {
+  height: 65px;
+  width: 65px;
+  background-color: black;
+  border-radius: 5000px; /* to  make it circle*/
+  color: white;
+  line-height: 65px; /* to align the icon in the center*/
+  margin-bottom: 21px;
+  font-size: 22px;
+}
+
+.step:nth-child(1) .step-icon {
+  background-color: #fdf6de;
+  color: #f5ca36;
+}
+
+.step:nth-child(2) .step-icon {
+  background-color: #ffdeec;
+  color: #da196a;
+}
+
+.step:nth-child(3) .step-icon {
+  background-color: #e9e5ff;
+  color: #4d31e4;
+}
+
+.third-heading {
+  font-size: 23px;
+  color: #3d4048;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: #74777d;
+  font-size: 18px;
+}
+
+.more-info {
+  border-bottom: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-size: 18px;
+  padding-bottom: 5px;
+  transition: all 0.5s;
+}
+
+.more-icon {
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.more-info:hover {
+  opacity: 0.8;
+}
+
+.more-info:hover .more-icon {
+  transform: translateX(3px);
+}
+
+/* Footer */
+
+.footer {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a1a4b0;
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+
+.legal-list {
+  display: flex;
+  gap: 15px;
+}
+
+.legal-item {
+}
+
+.legal-link {
+  font-size: 14px;
+  text-transform: capitalize;
 }
