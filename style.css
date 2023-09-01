@@ -20,6 +20,7 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   overflow-x: hidden;
+  position: relative;
 }
 
 .bg_image {
@@ -339,10 +340,83 @@ main {
   gap: 15px;
 }
 
-.legal-item {
-}
-
 .legal-link {
   font-size: 14px;
   text-transform: capitalize;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+  main {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .photo-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 965px) {
+  .search {
+    padding: 40px 0 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .photo-1 {
+    display: none;
+  }
+
+  .credentials {
+    padding: 15px 0;
+  }
+
+  .credentials p {
+    font-size: 20px;
+  }
+
+  .credentials img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 445px) {
+  .credentials {
+    padding: 10px 0;
+  }
+
+  .credentials p {
+    font-size: 15px;
+  }
+
+  .credentials img {
+    width: 60px;
+  }
+
+  .search h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    padding: 0 8px;
+  }
+
+  .second-heading {
+    font-size: 25px;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  main {
+    height: 1300px;
+  }
+
+  .form {
+    padding: 0 10px;
+  }
+
+  .form i {
+    padding-left: 4px;
+  }
 }
